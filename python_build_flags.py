@@ -21,7 +21,7 @@ print('LINKER', end=';')
 print(conf.get('BLDSHARED', '').split()[0], end=';')
 
 print('LDFLAGS', end=';')
-print(' '.join(conf.get('BLDSHARED', '').split()[1:]) + ' ' + conf.get('BLDLIBRARY', '') + ' ' + conf.get('LDFLAGS', ''), end=';')
+print(' '.join(conf.get('BLDSHARED', '').split()[1:]) + ' ' + conf.get('LDFLAGS', ''), end=';')
 
 print('EXT_SUFFIX', end=';')
 ext_suffix = '.so'
